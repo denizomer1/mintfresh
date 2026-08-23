@@ -48,6 +48,8 @@ OxiKernel fixes all of this by **backporting from reference kernels** (Motorola 
 ```
 OxiKernel-<date>-enforcing.zip
 ├── boot.img          (OxiKernel + dtb_exynos.img, ~42 MB)
+├── dtb.img           (Device Tree Blob for Exynos 9610)
+├── dtbo.img          (Device Tree Blob Overlay for Exynos 9610)
 └── META-INF/         (Android boot image header, etc.)
 ```
 

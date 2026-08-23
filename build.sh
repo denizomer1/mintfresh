@@ -184,6 +184,7 @@ BUILD_PACKAGE() {
     mkdir -p "$TMP_DIR"
     cp "$OUT_DIR/boot.img" "$TMP_DIR/boot.img"
     cp "$TOP/arch/arm64/boot/dtb_exynos.img" "$TMP_DIR/dtb.img"
+    cp "$TOP/arch/arm64/boot/dtbo_exynos.img" "$TMP_DIR/dtbo.img"
     cp -r "$TOP/tools/make/package/META-INF" "$TMP_DIR/META-INF"
 
     cd "$TMP_DIR" && zip -9 -r "$OUT_DIR/$FILE_NAME" ./* 2>&1 | sed 's/^/     /'

@@ -129,7 +129,7 @@ The build artifacts are written to the `out/` directory:
 - `OxiKernel-*.zip`: Minimal package flashable via Galaxy A50 recovery
 - `boot.img`: Direct boot image for Galaxy A50
 
-The ZIP contains only `boot.img`, `dtb.img`, and a minimal recovery installer specific to the Galaxy A50. It does not include AnyKernel, BusyBox, Magisk, KernelSU, or any root helper tool. The installer checks the device ID only and writes the two images to the corresponding partitions.
+The ZIP contains `boot.img`, `dtb.img`, `dtbo.img`, and a minimal recovery installer specific to the Galaxy A50. It does not include AnyKernel, BusyBox, Magisk, KernelSU, or any root helper tool. The installer checks the device ID only and writes the images to the corresponding partitions.
 
 To rebuild from scratch, rerun the normal command. The script always creates a clean configuration with `make mrproper`.
 
