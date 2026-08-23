@@ -281,7 +281,8 @@ static void exynos_reboot(enum reboot_mode mode, const char *cmd)
 	addr = exynos_pmu_base + EXYNOS_PMU_SYSIP_DAT0;
 	if (cmd) {
 		if (!strcmp(cmd, "bootloader") || !strcmp(cmd, "bl") ||
-				!strcmp((char *)cmd, "fastboot") || !strcmp(cmd, "fb")) {
+				!strcmp((char *)cmd, "fastboot") || !strcmp(cmd, "fb") ||
+				!strcmp(cmd, "download")) {
 			__raw_writel(REBOOT_MODE_FASTBOOT, addr);
 		} else if (!strcmp(cmd, "recovery")) {
 			__raw_writel(REBOOT_MODE_RECOVERY, addr);

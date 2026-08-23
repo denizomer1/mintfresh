@@ -233,7 +233,7 @@ static void sec_reboot(enum reboot_mode reboot_mode, const char *cmd)
 	}
 
 	flush_cache_all();
-	mach_restart(REBOOT_SOFT, "sw reset");
+	mach_restart(REBOOT_SOFT, cmd);
 
 	pr_emerg("%s: waiting for reboot\n", __func__);
 	while (1)
