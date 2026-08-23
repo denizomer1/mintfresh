@@ -65,8 +65,8 @@ VERIFY_TOOLCHAIN() {
         script_echo "I: Toolchain found at repository root"
     else
         script_echo "I: Toolchain not found at repository root"
-        script_echo "   Downloading Proton Clang from kdrag0n/proton-clang..."
-        git clone 'https://github.com/kdrag0n/proton-clang.git' "$TOOLCHAIN" --depth 1 2>&1 | sed 's/^/     /'
+        script_echo "   Downloading Proton Clang from denizomer1/proton-clang..."
+        git clone 'https://github.com/denizomer1/proton-clang.git' "$TOOLCHAIN" --depth 1 2>&1 | sed 's/^/     /'
     fi
 
     export PATH="${TOOLCHAIN}/bin:$PATH"

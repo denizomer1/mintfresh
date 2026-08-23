@@ -14,7 +14,7 @@ OxiKernel is an AOSP-only Android kernel built exclusively for the **Samsung Gal
 | Supported Android version | Android 11 - Android 16 |
 | ROM types | AOSP-based ROMs only |
 | Architectures | ARM64 kernel, ARM32 compatibility layer |
-| Compiler | Proton Clang 13 (kdrag0n/proton-clang) |
+| Compiler | Proton Clang 13 (denizomer1/proton-clang) |
 | License | Kernel: GPL-2.0, build script: GPL-3.0 |
 
 ### Key features
@@ -99,7 +99,7 @@ cd oxikernel
 
 ### 3. Start the build
 
-`build.sh` automatically downloads the required Proton Clang toolchain from `kdrag0n/proton-clang` into `toolchain/` on the first run, merges configurations, and produces the package.
+`build.sh` automatically downloads the required Proton Clang toolchain from `denizomer1/proton-clang` into `toolchain/` on the first run, merges configurations, and produces the package.
 
 For SELinux enforcing build:
 
